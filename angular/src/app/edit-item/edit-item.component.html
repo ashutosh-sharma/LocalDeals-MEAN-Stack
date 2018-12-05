@@ -1,0 +1,43 @@
+  <div class="well">
+        <form #editItemForm (ngSubmit)="updateItem(editItemForm)">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Item-Title:</label>
+                <input type="text" class="form-control" id="itemTitle" name="itemtitle" [(ngModel)]="selectedItem.title">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="price">Item-Price:</label>
+                <input type="text" class="form-control" id="itemPrice" name="itemPrice" [(ngModel)]="selectedItem.price">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Item-IsAvail:</label>
+                <select id="itemAvail" name="itemAvail" [(ngModel)]="selectedItem.isAvail">
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="categoryId">Item-Category:</label>
+                <select id="itemCategory" name="itemCategory" [(ngModel)]='selectedItem.categoryId'>
+                  <option value="1">Beverage</option>
+                  <option value="2">Cake</option>
+                  <option value="3">Namkeen</option>
+                  <option value="4">Biscuit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+</div>

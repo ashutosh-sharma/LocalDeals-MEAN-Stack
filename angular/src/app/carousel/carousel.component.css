@@ -1,0 +1,21 @@
+.carousel-container {
+  padding-bottom: 2%;
+  padding-top: 4%;
+  color: white;
+  background: #233640;
+}
+
+.carousel-inner {
+  /* display: block; */
+  height: 500px;
+}
+
+/* ==========================================================================
+   - 2.1.4  SMALL DEVICES, TABLETS
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+  .carousel {
+    height: 250px;
+  }
+}

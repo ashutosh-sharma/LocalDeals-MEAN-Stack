@@ -1,0 +1,32 @@
+<h1> {{tableHeader}} </h1>
+<table #content class="table table-hover">
+
+  <thead>
+    <tr>
+      <th class="text-center">{{tableTitle}}</th>
+      <th class="text-center">{{tablePrice}}</th>
+      <th class="text-center">{{tableIsAvail}}</th>
+      <th class="text-center">Options</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let item of itemList">
+      <td>{{item.title}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.isAvail}}</td>
+
+      <td>
+        <button type='button' *ngIf="toggleButton" class='btn btn-success' (click)='addToCart(item)'> Add to Cart </button>
+        <button class='btn btn-success' *ngIf="!toggleButton" (click)='editItem(item)' [disabled]='displayItemForm'> Edit </button>
+        <button class='btn btn-danger' *ngIf="!toggleButton" (click)='deleteItem(item)'> Delete </button>
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<!-- selectedItem = ItemToEdit is binding -->
+<app-edit-item *ngIf="displayItemForm" [selectedItem]="itemToEdit" (updatedEvent)="refreshTable(msg)"></app-edit-item>

@@ -1,2 +1,2 @@
-# LocalDeals-MEAN-Stack
-An E-commerce website based upon MEAN Stack
+# Local-Deals
+Local deals is a project based upon MEAN stack.

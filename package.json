@@ -1,0 +1,33 @@
+{
+  "name": "local-deals",
+  "version": "1.0.0",
+  "description": "A web application which is a platform for shopkeepers to sell their product and customers to buy products online.",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.0.17",
+    "popper.js": "^1.14.3",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashutosh-sharma/Local-Deals.git"
+  },
+  "keywords": [
+    "Local-Deals",
+    "Local",
+    "Deals"
+  ],
+  "author": "Madhur Taneja and Ashutosh Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashutosh-sharma/Local-Deals/issues"
+  },
+  "homepage": "https://github.com/ashutosh-sharma/Local-Deals#readme"
+}

@@ -1,0 +1,27 @@
+<div class="row text-center ">
+  <div class="col-md-2 col-sm-3 col-xs-4 no-padding">
+    <nav id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h2> Shopkeeper Dashboard </h2>
+            </div>
+
+            <!-- Sidebar categories -->
+            <ul class="list-unstyled components">
+                <li class="active"><a href="#">HOME</a></li>
+                <li *ngFor="let category of categoryList" (click)=getCategoryItems(category)>
+                    <a>{{category.title}}</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled components">
+                <li> <a routerLink = "newItem" > Add Item </a></li>
+            </ul>
+      </nav>
+  </div>
+
+  <div class="col-md-10 col-sm-9 col-xs-8 no-padding">
+    <img class="img-responsive welcome-img-dashboard" src="/assets/img/welcome-dashboard.jpg" *ngIf="!displayItems">
+    <app-dashboard-content *ngIf="displayItems" [itemList] = "itemListFromParent" [tableHeader]= "categoryHeader" [parentComponent]="componentName"></app-dashboard-content>
+  </div>
+</div>

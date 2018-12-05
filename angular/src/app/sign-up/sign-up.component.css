@@ -1,0 +1,99 @@
+/* Divider (Horizontal Line) Styling */
+span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 5em;
+  font-size: 20px;
+}
+
+.outer-line {
+  width: 40%;
+  border-bottom: 5px solid #fff;
+}
+
+.outer-line-dark {
+  width: 40%;
+  border-bottom: 5px solid #233640;
+}
+
+#form-reset {
+  margin-top: 5%;
+  /* border: 5px solid white; */
+  padding: 5%;
+  border-radius: 25px;
+}
+
+#forms {
+  color: white;
+  background: #476878;
+  /* padding-bottom: 5%; */
+}
+
+/* ==========================================================================
+   3. SWITCH
+   ========================================================================== */
+
+   .sw {
+     margin-bottom: 0 !important;
+   }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 24px;
+    margin-bottom: 0 !important;
+  }
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(76px);
+  -ms-transform: translateX(76px);
+  transform: translateX(76px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sho {
+  float: right;
+}

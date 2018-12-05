@@ -1,0 +1,47 @@
+.border {
+  border: 3px solid white;
+}
+
+.border-right {
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  background: #233640;
+}
+
+.border-left {
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  background: #233640;
+  /* background: #1a252f; */
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.form {
+  color: white;
+  background: #476878;
+}
+
+/* Divider (Horizontal Line) Styling */
+span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 5em;
+  font-size: 20px;
+}
+
+.outer-line {
+  width: 40%;
+  border-bottom: 5px solid #fff;
+}
+
+.outer-line-dark {
+  width: 40%;
+  border-bottom: 5px solid #233640;
+}

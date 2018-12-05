@@ -1,0 +1,24 @@
+<h1>Cart</h1>
+<table #content class="table table-hover">
+  <thead>
+    <tr>
+      <th class="text-center">{{tableHeaderEmail}}</th>
+      <th class="text-center">{{tableHeaderProductID}}</th>
+      <th class="text-center">{{tableHeaderProductName}}</th>
+      <!-- <th class="text-center">{tabelHeaderOptions}</th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let item of cartItems">
+      <td>{{item.userEmail}}</td>
+      <td>{{item.productId}}</td>
+      <td>{{item.productName}}</td>
+      <!-- <td>
+        <button class='btn btn-danger' (click)='deleteProduct(item)'> Delete </button>
+      </td> -->
+    </tr>
+
+  </tbody>
+</table>
